@@ -1,0 +1,475 @@
+﻿.slider {
+    -ms-border-radius: 25px;
+    -ms-box-shadow: inset 0 1px 5px 0px rgba(0, 0, 0, .5),
+                    0 1px 0 0px rgba(250, 250, 250, .5);
+    -webkit-box-shadow: inset 0 1px 5px 0px rgba(0, 0, 0, .5),
+                        0 1px 0 0px rgba(250, 250, 250, .5);
+    background: transparent url('../../images/slider_bar.html') repeat-x;
+    background-color: #B6B5B4;
+    box-shadow: inset 0 1px 5px 0px rgba(0, 0, 0, .5),
+                0 1px 0 0px rgba(250, 250, 250, .5);   
+    height: 14px;    
+    margin-left:0;
+    margin-top: 10px;
+    position: relative;
+    width: 100%;
+}
+
+.excelTitle td {
+    color: #525453;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.legend .title {
+    display: block;
+    line-height: 16px;
+    margin-bottom: 5px;
+}
+
+.legend .color-sample {
+    display: block;
+    float: left;
+    height: 1em;
+    margin-right: 0.5em;
+    width: 1em;
+}
+
+.field-tip {
+    cursor: pointer;
+    position: relative;
+    /*float: left;*/
+    display: inline-block;
+}
+
+.field-tip .tip-content {
+    -moz-box-shadow: 2px 2px 5px #aaa;
+    -moz-transition: .25s ease-in-out;
+    -ms-border-radius: 3px;
+    -ms-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    -webkit-box-shadow: 2px 2px 5px #aaa;
+    -webkit-transition: .25s ease-in-out;
+    background: white;
+    border-radius: 3px;
+    box-shadow: 2px 2px 5px #aaa;
+    color: #747373;
+    cursor: default;
+    display: none;
+    font-size:13px;
+    font-weight: 600;
+    left: calc(100% + 16px);
+    padding: 10px;
+    position: absolute;
+    top: -10px; /* - top padding */
+    transition: .25s ease-in-out;
+    white-space: pre-wrap;
+    width: 210px;
+    z-index: 9999;
+}
+
+.field-tip .tip-content:before {
+    border: 8px solid transparent;
+    border-right-color: #e5e5e5;
+    content: ' '; /* Must have content to display */
+    height: 0;
+    left: -16px; /* 2 x border width */
+    margin-top: -8px; /* - border width */
+    position: absolute;
+    top: 20px;
+    width: 0;
+}
+
+.field-tip:hover .tip-content {
+    display: block;
+    white-space: pre-wrap;
+}
+    
+
+.InputLabel {
+    font-size: 18px;
+    color: #D82417;
+    margin-top:5px;
+    /*overflow: hidden;*/
+        
+    font-weight: 600;
+}
+.InputLabel > div {
+    float:left;
+    padding-top: 7px;
+}
+.InputButtonCalc{
+    background-color: #df4f45;
+    border: none;
+    color: white;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    margin-top: 20px;
+    float: right;
+}
+.CalcBlock{
+    /*overflow:hidden;*/
+    color: #747373;
+    font-weight: 600;
+}
+.InputLabel img,
+.loanDataBlock img {
+    -moz-transition: .25s ease-in-out;
+    -ms-opacity: 0.8;
+    -ms-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    -webkit-transition: .25s ease-in-out;
+    margin-left: 3px;
+    opacity: 0.8;
+    transition: .25s ease-in-out;
+    vertical-align: bottom;
+}
+
+.InputLabel img:hover,
+.loanDataBlock img:hover {
+    -ms-opacity: 1;
+    opacity: 1;
+}
+
+#text-Rounding { margin-left: 30px; }
+
+/*.SelectBlock .sectionSlider:first-child { padding-left: 0px; }
+
+.SelectBlock .sectionSlider:last-child { padding-right: 0px; }*/
+
+.SelectBlock .sectionSlider {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+        width: 50%;
+    /*overflow: hidden;*/
+    float: left;
+}
+
+.sectionSlider .InputLabel:first-child {
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+#legendDiv {
+    color: #00587F;
+    font-family: Dax_med;
+    margin-top: 10px;
+}
+
+input { font-family: Dax; }
+
+.CalcButtonGreen { background-color: #b4d23d !important; }
+
+.CalcButtonBlue { background-color: #0075a3 !important; }
+
+.CalcButton {
+    -moz-box-sizing: border-box;
+    -moz-min-width: 100px;
+    -ms-min-width: 100px;
+    -o-min-width: 100px;
+    -webkit-box-sizing: border-box;
+    -webkit-min-width: 100px;
+    border: 0px;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    float: right;
+    height: 30px;
+    line-height: 14px !important;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    min-width: 100px;
+    padding: 5px 20px 5px 20px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.CalcButtonBlue:hover { background-color: #00597c !important; }
+
+.CalcButtonGreen:hover { background-color: #a8ce33 !important; }
+
+.canvasBlock {
+    float: left;
+    overflow: hidden;
+    width: 600px;
+}
+
+.loanDataBlockExcel .dataCalcBlockTitle {
+    line-height: 16px;
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+.loanDataBlock .dataCalcBlockTitle {
+    color: rgb(116, 115, 119);
+    /*font-family: Arial !important;*/
+    line-height: 16px;
+    padding-bottom: 15px;
+    font-weight: 600;
+    padding-top:15px;
+    font-weight: bold;
+    /*float: left;*/
+    padding-left:0px;
+    text-align: left;
+}
+
+.loanDataBlock .dataCalcBlockTitle div:first-child {
+    float: left;
+    
+    /*margin-right: 5px;*/
+}
+.loanDataBlock .dataBlockText div{
+    /*white-space:nowrap;*/
+}
+.loanDataBlock .dataBlockText,
+.loanDataBlockExcel .dataBlockText {
+    font-family: Arial !important;
+    font-size: 15px;
+    padding: 0px 3px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: right;
+}
+
+.loanDataBlockExcel {
+    background-color: transparent;
+    border: 1px dotted black;
+}
+
+.loanDataBlock {
+    width:auto;
+    margin: auto 5px;
+    font-size: 14px;
+}
+.loanDataBlockSalary{
+    padding-top: 0px;
+}
+
+.loanDataBlockSalary .dataCalcBlockTitle{
+    
+    padding-bottom: 5px;
+    padding-top: 5px;
+   
+}
+
+.loanDataBlock table,
+.loanDataBlockExcel table { width: 100%; }
+
+.divGradient {
+    /*background: linear-gradient(to bottom, #fcfcfc 60%, #f1f1f1 100%);*/
+    padding: 5px;
+}
+
+.tableBlockExcel table td { padding-right: 100px; }
+
+.tableBlock table {
+    /*border: none;*/
+    border-spacing: 0px;
+    /*color: #525453;
+    font-size: 14px;*/
+    /*margin-top: 20px;*/
+    text-align: center;
+    width: 100%;
+}
+
+.tableBlock table td {
+        border-left: none;
+    border-right: none;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    text-align: center;
+}
+
+.tableBlock table tbody tr:first-child td {
+    /*background-color: #e2e2e2;*/
+    color: #D82417;
+    /*font-family: Dax_med;*/
+    font-size: 15px;
+    padding: 7px;
+}
+
+.SelectBlock {
+    
+}
+.CalcBlock > .SelectBlock:first-child {
+    width:71%;
+    float:right;
+}
+.CalcBlock > .SelectBlock:nth-child(2){
+    width: 28%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.45);
+}
+.CalCBlock > .SelectBlock:last-child {
+    
+}
+
+.SelectBlock::after,
+.ScrollsBlock:after,
+.sectionSlider:after { clear: both }
+
+.ScrollsBlock:after,
+.ScrollsBlock:before,
+.SelectBlock:after,
+.SelectBlock:before,
+.sectionSlider:after,
+.sectionSlider:before {
+    content: " ";
+    display: table;
+}
+#OverpaymentTitle, #ResultPayTitle{
+    text-align: left;
+    float: left;
+    color: #D82417;
+}
+.ScrollsBlock { 
+    width: 50%;
+    float: left;
+    
+}
+.ScrollsBlock:first-child{
+    padding-right:10px;
+}
+.ScrollsBlock:last-child{
+    padding-left:10px;
+}
+
+.SelectBlock select {
+    height: 30px;
+    width: 172px;
+    margin-top: 10px;
+}
+
+.ScrollsBlock .inputValue {
+    float: right;
+    width: 120px;
+    color: #747373;
+    border: 1px solid #D82417;
+    height: 26px;
+    padding: 5px;
+}
+.inputValue {
+    float: right;
+    width: 120px;
+    color: #747373;
+    border: 1px solid #D82417;
+    height: 26px;
+    padding: 5px;
+}
+
+
+.extraOptionsTitle {
+    color: #d81a0e;
+    font-size: 23px;
+    margin-top: 30px;
+        margin-right: 15px;
+}
+
+#all { overflow: visible !important }
+
+.ui-slider-handle {
+    color: #1C94C4;
+    cursor: pointer;
+    font-weight: bold;
+    height: 27px;
+    margin-left: -25px;
+    outline: none;
+    position: absolute;
+    top: -10px;
+    width: 50px;
+    z-index: 2;
+}
+
+.ui-slider-range {
+    -ms-border-radius: 25px;
+    background-color: #d82417;
+    border: 0;
+    /*border-radius: 25px;*/
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.ecoInputClear {
+    padding: 0 !important;
+    -ms-border-radius: 0 !important;
+    border-radius: 0 !important;
+    -webkit-box-sizing: content-box !important;
+    -moz-box-sizing: content-box !important;
+    box-sizing: content-box !important;
+    line-height: normal !important;
+}
+
+.toplang, .topsearch {
+    -webkit-box-sizing: content-box !important;
+    -moz-box-sizing: content-box !important;
+    box-sizing: content-box !important;
+}
+
+#EcobankLinkBarTop-Links {
+    font-size: 12px !important;
+    font-weight: normal !important;
+}
+.selectCalculator{
+        height: 26px;
+    background: url('../../img/uba/select_arrow_red.png') no-repeat 95% center;
+    background-color: rgba(255,255,255,0.8);
+    cursor: pointer;
+    border: 1px solid #d82417;
+    width: 100%;
+    padding: 5px;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+.sectionSlider{
+    /*width:50%;*/
+   margin-bottom: 10px;
+
+}
+
+@media screen and (max-width:1100px) {
+    .CalcBlock > .SelectBlock:first-child {
+        width:100%;
+        float:none;
+    }
+    .CalcBlock > .SelectBlock:nth-child(2){
+        width:300px;
+    }
+    /*.loanDataBlock{
+        max-width: 600px;
+        min-width: 250px;
+    }*/
+    .ScrollsBlock { 
+        width: 100%;
+        float: none;
+        
+    }
+    .ScrollsBlock:first-child{
+        padding-right:0px;
+    }
+    .ScrollsBlock:last-child{
+        padding-left:0px;
+    }
+}
+@media screen and (max-width:970px) {
+    
+}
+@media screen and (max-width:400px){
+    .SelectBlock .sectionSlider{
+        width:100%;
+        /*overflow: hidden;*/
+        float:none;
+    }
+}
+#tableDiv{
+    overflow: hidden;
+    border:none;
+    margin-top: 20px;
+    width: 100%;
+}

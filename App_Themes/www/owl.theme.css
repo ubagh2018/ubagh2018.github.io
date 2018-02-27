@@ -1,0 +1,110 @@
+/*
+* 	Owl Carousel Owl Demo Theme 
+*	v1.3.3
+*/
+
+.owl-theme .owl-controls{
+	position: absolute;
+    left: 20px;
+    z-index: 10;
+    bottom: 110px;
+}
+.owl-carousel.aop-review .owl-controls{
+    position: static !important;
+    z-index: 10;
+    margin: auto;
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,.3);
+    background: #2f2d2e;
+}
+.owl-carousel.aop-review .ubaImageValueParent{
+    margin: 0 !important;
+}
+.BannerBlockEmpty .owl-theme .owl-controls{
+    bottom: 10px !important; 
+}
+/* Styling Next and Prev buttons */
+.owl-theme .owl-controls .owl-dot{
+    display: inline-block;
+}
+.owl-theme .owl-controls .owl-dot span{
+	zoom: 1;
+	*display: inline;/*IE7 life-saver */
+	margin-right: 5px;
+	display: block;
+    width: 14px;
+    height: 14px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+    border: 2px solid white;
+	background: rgba(0,0,0,0);
+}
+.owl-theme .owl-controls .owl-dot:last-child span{
+    margin-right: 0;
+}
+.owl-theme .owl-controls .owl-dot.active span{
+    background: #fe0000;
+    border: 1px solid #fe0000 !important;
+}
+/* Clickable class fix problem with hover on touch devices */
+/* Use it for non-touch hover action */
+.owl-theme .owl-controls.clickable .owl-buttons div:hover{
+	filter: Alpha(Opacity=100);/*IE7 fix*/
+	opacity: 1;
+	text-decoration: none;
+}
+
+/* Styling Pagination*/
+
+.owl-theme .owl-controls .owl-page{
+	display: inline-block;
+	zoom: 1;
+	*display: inline;/*IE7 life-saver */
+}
+.owl-theme .owl-controls .owl-page span{
+	display: block;
+	height: 14px;
+	width: 14px;
+	margin: 5px 7px;
+    border:solid 2px #bec5c5;
+    background-color: rgba(0,0,0,0);
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+    
+	/*filter: Alpha(Opacity=50);
+	opacity: 0.5;*/
+}
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span{
+	/*filter: Alpha(Opacity=100);
+	opacity: 1;*/
+    background-color: #aba3a3;
+    border:none;
+}
+
+/* If PaginationNumbers is true */
+
+.owl-theme .owl-controls .owl-page span.owl-numbers{
+    display:block;
+	
+}
+
+/* preloading images */
+.owl-item.loading{
+	min-height: 150px;
+	background: url(AjaxLoader.html) no-repeat center center;
+}
+
+/*Custom by Anton*/
+.owl-item .item{
+    text-align:center;
+}
+.owl-item .item > img{
+    width: 100%;
+    height: auto;
+}
